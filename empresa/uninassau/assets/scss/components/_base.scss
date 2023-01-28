@@ -1,0 +1,138 @@
+
+:root {
+  --color-1:#f6e200;
+  --color-2:#002258;
+  --color-3:#003764;
+
+
+  //BASE 
+  //----------
+  --title-color: var(--color-3);
+
+  //button
+  --button-color: var(--color-2);
+  --button-bg-color: var(--color-1);
+
+  //FOOTER
+   //----------------
+   --footer-bg:#A8C9E3;
+
+  // HEADER
+  //-------------
+   --header-bg: var(--color-3);   
+
+  //menu lps
+  --menu-lp-color:var(--color-1);
+  --menu-lp-empresa-color:var(--color-2);
+  --menu-lp-empresa-bg-color:var(--color-1);
+  --menu-lp-mob-bg:var(--color-2);
+
+  //menu main 
+  --menu-bg:#A8C9E3;
+  --menu-link-color:var(--color-3);
+
+  //BODY
+  //----------------------
+  //banner 
+  --banner-bg-color: var(--color-3);
+  --banner-title-color: var(--color-1);
+
+  //vantagens
+  --sobre-title-color: var(--title-color);
+  --box-sobre-bg: var(--color-3);
+
+  //contratar
+  --contratar-bg: #ECECEC;
+  --contratar-title: var(--title-color);
+  --contratar-color: var(--color-3);
+
+  //motivos
+  --detalhes-title-color:var(--title-color);
+  --detalhes-color: var(--color-3);
+
+//depoimentos
+  --depoimentos-bg: #ECECEC;
+  --depoimentos-title: var(--title-color);
+  --depoimentos-color: var(--color-3);
+
+
+  //incentivo  
+  --incentivo-bg-color:var(--color-3);
+  --incentivo-color:#fff;
+  --incentivo-title-color:#fff;
+
+}
+
+
+.button{
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1em;
+  font-family: 'gobold_bold';
+  text-transform: uppercase;
+  padding: 20px;
+
+  background-color: var(--button-bg-color);
+  color: var(--button-color);
+}
+
+
+html,
+body {
+  font-size: $font-base + px;
+  //font-family: 'gobold_bold';
+  font-family: $font-family;
+  line-height: 1.5em;
+  scroll-behavior: smooth;
+  
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  
+}
+
+body {
+  position: relative;
+
+  &.page-template-termos-de-uso{
+    overflow-x: unset;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5em;
+  font-family: $font-family-head;
+}
+
+h2 {
+  font-size: rem(56);
+  font-weight: 700;
+  color:var(--title-color);
+}
+
+p {
+  line-height: 1.5;
+  //font-family: 'gobold_bold';
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.italic {
+  font-style: italic;
+}

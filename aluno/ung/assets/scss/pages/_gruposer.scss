@@ -1,0 +1,34 @@
+.grupo-ser-educacional{
+    background-color:var(--grupo-ser-bg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: auto;
+    padding: 60px 0;
+    .titulo-grupo{
+        padding-right: 40px;
+
+        .sec-title {           
+            color: var(--grupo-ser-title-color);
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            line-height: 1;
+        }
+           
+    }
+    .texto-grupo{
+        font-size: 1em;
+        color:var(--grupo-ser-color);
+    }
+
+
+    @media(max-width:991px){
+
+        .titulo-grupo{
+           
+            .sec-title {
+                text-align: center;                
+            }        
+        }
+        
+    }
+}

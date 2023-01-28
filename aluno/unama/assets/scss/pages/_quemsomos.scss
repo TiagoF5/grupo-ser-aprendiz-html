@@ -1,0 +1,105 @@
+.sobre{
+    margin-top: 270px;
+    position: relative;
+
+    @media(max-width:991px){
+        margin-top: 80px;
+        
+    }
+
+    .setas{
+        position: absolute;
+        width: 200px;
+        opacity: 0.4;
+        right: -15vw;
+        top: -70px;
+
+        @media(max-width:998px){
+            display: none;
+        }
+    }
+
+    .quemsomos{
+        margin-bottom: 200px;
+
+        .sec-title{
+            font-size: 3.6em;
+            line-height: 1;            
+        }
+        .quem-somos-text {
+            color: var(--quem-somos-color);
+        }
+
+        @media(max-width:991px){
+            
+            margin-bottom: 100px;
+
+            h2{
+                font-size: 3.1em;             
+            }
+        }
+    }
+
+    .box-sobre{
+        background-color:var(--box-sobre-bg);
+        color: var(--box-sobre-color);
+        border-radius: 0 60px 0 60px;
+        position: relative;
+        padding: 60px 120px;
+
+        &::before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 390px;
+            height: 58px;
+            border-radius: 20px;
+            background-color: var(--box-sobre-bg);
+            position: absolute;
+            top: -18px;
+            left: 0;
+        }
+
+
+       .box-header{
+            .box-title{
+                font-size: 2.4rem;
+                line-height: 1; 
+                color: var(--sobre-box-title-color);
+                b{
+                    display: block;
+                    color: var(--sobre-box-title-highlight-color);
+                }
+            }
+        }
+
+        .box-body{
+            color: var(--sobre-box-body-color) ;            
+        }
+
+        @media(max-width:991px){
+            padding: 60px;
+            &::before {
+                width: 200px;
+            }
+        }
+
+        @media(max-width:767px){
+            padding: 60px 20px;
+
+            .box-header{
+                .box-title{
+                    font-size: 1.8rem;
+                    line-height: 1; 
+                    color: var(--sobre-box-title-color);
+                    b{
+                        display: block;
+                        color: var(--sobre-box-title-highlight-color);
+                    }
+                }
+            }
+           
+        }
+
+    }
+}

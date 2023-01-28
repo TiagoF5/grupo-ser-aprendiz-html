@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>UNINASSAU - APRENDIZ ALUNO</title>
+  <meta name="description" content="UNINASSAU - APRENDIZ ALUNO">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Home"> 
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#391B18">
+  <meta name="apple-mobile-web-app-title" content="Home">  
+
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#391B18">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../aluno-uninassau/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../aluno-uninassau/favicon-16x16.png">
+
+  <link rel="shortcut icon" href="../aluno-uninassau/favicon.ico">
+
+  <link rel="manifest" href="../manifest.json">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <style>
+    @font-face {
+      font-family: 'neue_helveticalight';
+      src: url('./assets/fonts/helvetica_neue_lt_45_light-webfont.woff2') format('woff2'),
+           url('./assets/fonts/helvetica_neue_lt_45_light-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+
+    }
+
+		@font-face {
+		    font-family: 'neue_helveticablack';
+		    src: url('./assets/fonts/helvetica_neue_lt_95_black-webfont.woff') format('woff'),
+		        url('./assets/fonts/helvetica_neue_lt_95_black-webfont.woff2') format('woff2');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+  </style>
+
+
+  <link rel="stylesheet" href="./assets/css/slick.css">
+	<!-- <link rel="stylesheet" href="./assets/css/slick-theme.css"> -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+	
+</head>
+
+<body class="home page-template page-template-pages page-template-home page-template-pageshome-php page page-id-2">
+
+  <header class="header ">
+    	<div class="menu-lp-mob">
+      	<div class="container">
+       		<div class="menu-lps-container">
+       			<ul id="menu-lps" class="nav nav-lps">
+       				<li id="menu-item-130" class="item-aluno menu-item menu-item-type-custom menu-item-object-custom menu-item-130"><a href="#">JOVEM APRENDIZ</a></li>
+       				<li id="menu-item-131" class="item-empresa menu-item menu-item-type-custom menu-item-object-custom menu-item-131"><a href="#">PARA A SUA EMPRESA</a></li>
+       			</ul>
+       		</div>       
+       	</div>
+     </div>
+     <div class="container ">
+     	<div class="menu-ajuste">
+        <div class=" logo">
+          <img src="./assets/image/logo-uninorte-white.svg" alt="logo" >
+        </div>
+        <div class="menu-lps-container">
+        	<ul id="menu-lps-1" class="nav nav-lps">
+        		<li class="item-aluno menu-item menu-item-type-custom menu-item-object-custom menu-item-130"><a href="#">JOVEM APRENDIZ</a></li>
+        		<li class="item-empresa menu-item menu-item-type-custom menu-item-object-custom menu-item-131"><a href="#">PARA A SUA EMPRESA</a></li>
+        	</ul>
+        </div>
+        <div class="right-menu">         
+          <div class="menu-mobile" onclick="openMenu()">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="menu-mobile-nav">
+      <ul class="container">
+        <li> <a href="#sobre"> QUEM SOMOS </a></li>
+
+        <li> <a href="#programa"> O QUE É O PROGRAMA</a></li>
+
+        <li> <a href="#grupo-ser-educacional"> GRUPO SER EDUCACIONAL </a></li>
+
+        <li> <a href="#como-tornar"> INSCREVA-SE </a></li>
+
+        <li> <a href="#vantagens"> VANTAGENS </a></li>
+
+        <li> <a href="#fotos"> FOTOS </a></li>
+      </ul>
+    </nav>
+
+    <nav class="menu-jovem-aprendiz">
+      <ul class="container">
+        <li> <a href="#sobre"> QUEM SOMOS </a></li>
+        
+        <li> <a href="#programa"> O QUE É O PROGRAMA</a></li>
+        
+        <li> <a href="#grupo-ser-educacional"> GRUPO SER EDUCACIONAL </a></li>
+        
+        <li> <a href="#como-tornar"> INSCREVA-SE </a></li>
+        
+        <li> <a href="#vantagens"> VANTAGENS </a></li>
+        
+        <li> <a href="#fotos"> FOTOS </a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+	<section class="banner" style="background-image: url(./assets/image/bg-banner.png); background-size:cover"> 
+
+	  <div class="container ">
+	      <div class="banner-infos banner-ajust">
+	         <div class="logo-banner">
+	            <img src="./assets/image/logo-white.svg" alt="logo">
+	         </div>
+
+	         <div>
+	            <h2 class="banner-title">Sua porta de entrada para o mercado de trabalho.</h2>
+	            <a href="mailto:jovemaprendiz@sereducacional.com" class="link-arrow button button-2">QUERO ME INSCREVER 
+	               <span class="arrow"></span>
+	            </a>
+	         </div>
+	      </div>
+
+	      <div class="banner-images-group">
+	         <div class="banner-images">      
+	            <div class="personagem1">
+	            <img src="./assets/image/personagem1.png" alt="formas" class="">
+	            </div>
+	            <div class="circulo">
+	               <img src="./assets/image/circulo-sombra.png" alt="formas" class="">
+	            </div>
+	            <div class="personagem2">
+	               <img src="./assets/image/personagem2.png"  alt="formas" class="">
+	            </div>
+	            
+	         </div>
+	         <span class="line line1"></span>
+	         <span class="line line2"></span>
+	      </div>
+
+	   </div>
+
+	</section>
+
+	
+	<section class="sobre container" id="sobre" style=" ">
+	   <img src="./assets/image/setas-down.png" alt="formas" class="setas">
+
+	   
+	   <div class="quemsomos">
+	      <div class="row">
+	         <div class="col-md-4 col-lg-3">
+	            <h2 class="sec-title">
+	               QUEM SOMOS            </h2>
+	         </div>
+	         <div class="col-md-8 col-lg-9">
+	            <div class="quem-somos-text">
+	               O Ser Educacional vem desde 1994 com projetos e planejamento de expansão, através de crescimento orgânico e de aquisições em âmbito nacional. Atualmente o grupo Ser Educacional está presente nas regiões Norte, Nordeste e Sudeste do Brasil na capacitação de adolescentes e jovens, em vulnerabilidade social, por meio de ações socioeducativas, mediação de acesso e integração ao mundo do trabalho.
+	             </div>
+	         </div>
+	      </div>
+	   </div>
+
+	   <div class="box-sobre">
+
+	      <div class="box-header">
+	         <div class="row align-items-center">
+	            <div class="col-lg-auto">
+	               <h3 id="programa" class="box-title">O QUE É O PROGRAMA <b>APRENDIZ UNINASSAU</b></h3>
+	            </div>
+	            <div class="col-lg-4 ml-lg-auto my-4 my-lg-0" >
+	               <a href="mailto:jovemaprendiz@sereducacional.com"  class="link-arrow button button-2">
+	                  QUERO ME INSCREVER 
+	                  <span class="arrow"></span>
+	               </a>
+	            </div>
+	         </div>
+	         
+	         
+	      </div>
+	      <div class="box-body pt-4">
+	         <p>O Programa Jovem Aprendiz Ser Educacional é voltado para a inserção de adolescentes e jovens no mundo do trabalho e é desenvolvido por meio de atividades de formação pessoal e profissional, voltadas para o exercício pleno da cidadania, para o protagonismo juvenil, para a capacitação profissional, para a inclusão sociocultural, respeitando o princípio de proteção integral do adolescente e sua condição peculiar de pessoa em desenvolvimento mediante contrato de trabalho, conforme legislação trabalhista.</p>
+	      </div>
+	      
+	   </div>
+	   
+	</section>
+
+	
+	<section class="como-tornar" id="como-tornar" style="">
+	   
+	   <img src="./assets/image/bg-comotornar.png"  class="phone-girl">
+	   
+	   <div class="body-como-tornar">
+	      <div class="container">
+	        <div class="sec-header">
+	            <h2 class="sec-title">COMO SE TORNAR UM<br\> JOVEM APRENDIZ?</h2>
+	        </div>
+	                <div class="row mt-5">       
+	            
+	            <div class="col-lg-3 col-md-6 mb-4" >
+	                <div class="cartoes">
+	                    <img src="./assets/icons/cv.png" alt="Cv" class='icone'>
+	                    <div class="cartao-body mt-3">
+	                        <p>É necessário ter entre 14 até 24 anos incompletos.</p>
+	                    </div>
+	                </div>
+	            </div>
+	         
+
+	            
+	            <div class="col-lg-3 col-md-6 mb-4" >
+	                <div class="cartoes">
+	                    <img src="./assets/icons/cv.png" alt="Cv" class='icone'>
+	                    <div class="cartao-body mt-3">
+	                        <p>Ter concluído ou estar cursando o ensino fundamental ou cursar o ensino médio.</p>
+	                    </div>
+	                </div>
+	            </div>
+	         
+
+	            
+	            <div class="col-lg-3 col-md-6 mb-4" >
+	                <div class="cartoes">
+	                   <img src="./assets/icons/cv.png" alt="Cv" class='icone'>
+	                    <div class="cartao-body mt-3">
+	                        <p>São diversas as empresas que disponibilizam oportunidades ao Jovem Aprendiz, por meio dos Programas de Aprendizagem Ser Educacional.</p>
+	                    </div>
+	                </div>
+	            </div>
+	         
+
+	            
+	            <div class="col-lg-3 col-md-6 mb-4" >
+	                <div class="cartoes">
+	                    <img src="./assets/icons/cv.png" alt="Cv" class='icone'>
+	                    <div class="cartao-body mt-3">
+	                        <p>A carga horária, conteúdo programático, locais e datas são definidos e estruturados de acordo com a área de atuação ou perfil da empresa parceira.</p>
+	                    </div>
+	                </div>
+	            </div>
+	         
+
+	                    </div>
+	                 
+	         <div class="sec-footer pt-5">
+	            <a href="mailto:jovemaprendiz@sereducacional.com"  class="link-arrow button button-2">QUERO ME INSCREVER                  <span class="arrow"></span>
+	               </a>
+	            
+	         </div>
+	      </div>
+	   </div>
+	</section>
+
+	
+	<section class="grupo-ser-educacional" id="grupo-ser-educacional" style="background-image: url(./assets/image/grupo-ser.png); ">
+
+	   <div class="container ">
+	      <div class="d-lg-flex align-items-lg-center">
+	         <div class="titulo-grupo">
+	            <h2 class="sec-title">GRUPO SER EDUCACIONAL</h2>
+	            <a href="mailto:jovemaprendiz@sereducacional.com"  class="link-arrow button button-2 d-lg-block d-none">SAIBA MAIS               <span class="arrow"></span>
+	            </a>
+	         </div>
+
+	         <div class="texto-grupo">
+	            <p>O embrião do grupo Ser Educacional começou em 1994, quando foi fundado o Bureau Jurídico Cursos para Concursos com o objetivo de preparar candidatos para os concorridos concursos públicos.</p>
+	            <p>Em 2003, o grupo foi fundado, junto com a Faculdade Maurício de Nassau, na cidade do Recife, em Pernambuco. Desde então, vem sendo construído de forma gradual e sustentável. Atualmente, como uma das maiores companhias de ensino superior do Brasil, o Ser Educacional mantém respeitadas instituições de ensino, alinhadas à sua visão, missão, valores e nosso jeito de ser e fazer.</p>
+	            <p>Temos, acima de tudo, compromisso com o ser humano e sua realização pessoal e profissional. Nosso compromisso com a empregabilidade e o empreendedorismo é resultado do entendimento de seu papel na formação do indivíduo, focada no crescimento pessoal em termos mais amplos.</p>
+	            <h5>GRUPO SER EDUCACIONAL: UM PROJETO NACIONAL COM ATENÇÃO ÀS CARACTERÍSTICAS E CULTURA REGIONAIS.</h5>
+	            <p>Com projeto e planejamento de expansão, através de crescimento orgânico e de aquisições em âmbito nacional, atualmente o grupo Ser Educacional está presente nas regiões Norte, Nordeste e Sudeste do Brasil. Anualmente são formados milhares de alunos que ingressam no mercado de trabalho, contribuindo para o desenvolvimento econômico do país. Para chegar a esse resultado e cumprir seus objetivos institucionais, o grupo Ser Educacional conta com um time de primeira linha, que adotou os princípios e a proposta de valor da instituição.</p>
+	         </div>
+	         <div class="d-lg-none">
+	            <a href="mailto:jovemaprendiz@sereducacional.com"  class="link-arrow button button-2 ">SAIBA MAIS            <span class="arrow"></span>
+	         </a>   
+	         </div>
+	      </div>
+	      
+	   </div>
+
+	</section>
+
+	<section class="vantagens" id="vantagens" style="background-image: url(./assets/image/vantagens-bg.png)">
+
+	   <div class="  container">
+	      <div class="row">
+	         <div class="col-lg-5 mb-4">
+	            <div class="textos-vantagens">
+	               <h2 class="sec-titile">VANTAGENS DE PARTICIPAR DO PROGRAMA</h2>
+	               <a href="mailto:jovemaprendiz@sereducacional.com" class="link-arrow button button-2">QUERO ME INSCREVER <span class="arrow"></span>
+	               </a>
+	            </div>    
+	         </div>
+	         <div class="col-lg-7">
+	            <div class="row">
+	               
+	            
+	               <div class="col-md-6 mb-4 vantagem">                
+	                  <div class="box-vantagens">
+	                     <img src="./assets/icons/cv2.png" alt="Cv2" class="icone">
+	                     <p>Suporte no recrutamento e na seleção dos aprendizes.</p>
+	                  </div>
+	               </div> 
+	                     
+	               
+	               <div class="col-md-6 mb-4 vantagem">                
+	                  <div class="box-vantagens">
+	                     <img src="./assets/icons/cv2.png" alt="Cv2" class="icone">
+	                     <p>Prática de Responsabilidade Social Corporativa.</p>
+	                  </div>
+	               </div> 
+	                     
+	               
+	               <div class="col-md-6 mb-4 vantagem">                
+	                  <div class="box-vantagens">
+	                     <img src="./assets/icons/cv2.png" alt="Cv2" class="icone">
+	                     <p>Sua melhor opção na busca de jovens promissores com soluções sob medida.</p>
+	                  </div>
+	               </div> 
+	                     
+	                     
+	            </div>
+	         </div>
+	           
+	      </div>
+	      
+	   </div>   
+
+
+	         
+	</section>
+
+
+	<section class="sec-depoimentos" id="depoimentos">
+    	<div class="container">
+	        <header class="sec-header mb-4">
+	            <h2 class="sec-title title">
+	                Depoimentos
+	            </h2>
+	        </header>
+        	<div class="slider-depoimentos">
+                             
+	            <div class="depoimento">
+	                <div class="depoimento-card">
+	                    <div class="depoimento-outter">
+	                    	<a href="#depoimentoeModal" data-toggle="modal" data-target="#depoimentoeModal" data-title="Alexsandro Patrik Venceslau Dias" data-cargo="Jovem Aprendiz grupo Ser Educacional" data-content="<p>A importância do programa de aprendizagem é tamanha, tendo em vista que somos inexperientes para o mercado de trabalho, mas, durante o programa é fácil de notar o quanto influencia no mindset para o mercado.</p>" >                
+	                            <div class="depoimento-body">
+	                                <div class="depoimento-header">
+	                                    <h3 class="depoimento-nome">Alexsandro Patrik Venceslau Dias</h3>
+	                                    <h4 class="depoimento-cargo">Jovem Aprendiz grupo Ser Educacional</h4>
+	                                </div>
+	                                <div class="depoimento-content">
+	                                    A importância do programa de aprendizagem é tamanha
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div><!-- DEPOIMENTO CARD --> 
+	            </div>
+               
+	            <div class="depoimento">
+	                <div class="depoimento-card">
+	                	<div class="depoimento-outter">
+	                        <a href="#depoimentoeModal" data-toggle="modal" data-target="#depoimentoeModal" data-title="Athny Beatriz Alves de Lima" data-cargo="Jovem Aprendiz grupo Ser Educacional" data-content="<p>Eu percebo que o programa de aprendiz nos ajuda a crescer profissionalmente, a aprender mais, a ser mais confiante e responsável. É uma oportunidade para o jovem aprendiz crescer junto com a empresa e abrir mais possibilidades.</p>" >
+	                            <div class="depoimento-body">
+	                                <div class="depoimento-header">
+	                                    <h3 class="depoimento-nome">Athny Beatriz Alves de Lima</h3>
+	                                    <h4 class="depoimento-cargo">Jovem Aprendiz grupo Ser Educacional</h4>
+	                                </div>
+	                                <div class="depoimento-content">
+										Eu percebo que o programa de aprendiz nos ajuda a crescer profissionalmente, a aprender mais, a ser mais confiante e&hellip;
+	                                </div>
+
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>    <!-- DEPOIMENTO CARD --> 
+	            </div>
+            
+	            <div class="depoimento">
+	                <div class="depoimento-card">
+	                	<div class="depoimento-outter">
+	                        <a href="#depoimentoeModal" data-toggle="modal" data-target="#depoimentoeModal" data-title="Geovani Soares" data-cargo="Jovem Aprendiz grupo Ser Educacional" data-content="<p>Desde que ingressei ao programa, posso dizer que as aulas do curso me ajudaram bastante, porque apesar de já ter cursado o ensino médio integrado ao técnico de administração, consegui aprender muito mais coisas, principalmente voltadas ao mercado de trabalho, me dando segurança e experiências passadas durante as aulas.</p>
+	                        <p>Acredito que seja importante para nós o aprendizado, e também os momentos de descontração, conhecendo aprendizes novos, e trocando experiências com trabalhos em grupo, mas o principal é sim, o fator ingresso ao mercado de trabalho, pois sei que muitos de nós estão tendo a primeira experiência com o primeiro emprego, e muitas vezes nos sentimos perdidos em relação a como se comportar, o que fazer em determinados momentos, e até mesmo a questão de conhecimentos, por isso, acho muito importante o curso, e espero poder aproveitar mais até o fim do meu contrato de aprendiz!!</p>" >                
+	                            <div class="depoimento-body">
+	                                <div class="depoimento-header">
+	                                    <h3 class="depoimento-nome">Geovani Soares</h3>
+	                                    <h4 class="depoimento-cargo">Jovem Aprendiz grupo Ser Educacional</h4>
+	                                </div>
+	                                <div class="depoimento-content">
+	                                	Desde que ingressei ao programa, posso dizer que as aulas do curso me ajudaram bastante, porque apesar de já ter&hellip;
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>    <!-- DEPOIMENTO CARD --> 
+	            </div>
+            
+	            <div class="depoimento">
+	                <div class="depoimento-card">
+	                	<div class="depoimento-outter">
+	                        <a href="#depoimentoeModal" data-toggle="modal" data-target="#depoimentoeModal" data-title="Leonardo Henrique Fernandez" data-cargo="Jovem Aprendiz grupo Ser Educacional" data-content="<p>A importância do programa jovem aprendiz na minha vida</p>
+	                        	<p>O programa jovem aprendiz me possibilitou uma oportunidade no mercado de trabalho, que hoje em dia está muito concorrido e cada vez buscando por pessoas com experiência, e como eu terminei o ensino médio recentemente não tinha nenhuma experiência no mercado, e o programa me possibilitou essa oportunidade. Não apenas isso, o programa oferece um curso de auxiliar administrativo pela UNG que está me ajudando muito a ter uma noção de como funciona as empresas, graças ao curso hoje tenho algumas noções de RH, processo seletivo, administração financeira, noções dos direitos trabalhistas, com leis que eu não conhecia como a lei LGPD de proteção de dados.</p>
+	                        	<p>O curso tem me ajudado muito no aprendizado e a empresa também, aprendi a mexer no Excel que hoje em dia é muito importante, mercado livre que está em alta, o programa jovem aprendiz me possibilitou a aprender coisas novas.</p>" >                
+	                            <div class="depoimento-body">
+	                                <div class="depoimento-header">
+	                                    <h3 class="depoimento-nome">Leonardo Henrique Fernandez</h3>
+	                                    <h4 class="depoimento-cargo">Jovem Aprendiz grupo Ser Educacional</h4>
+	                                </div>
+	                                <div class="depoimento-content">
+	                                	A importância do programa jovem aprendiz na minha vida
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>    <!-- DEPOIMENTO CARD --> 
+	            </div>
+            
+	            <div class="depoimento">
+	                <div class="depoimento-card">
+	                	<div class="depoimento-outter">
+	                        <a href="#depoimentoeModal" data-toggle="modal" data-target="#depoimentoeModal" data-title="Yasmin Carvalho de Melo" data-cargo=" Jovem Aprendiz grupo Ser Educacional" data-content="<p>Bom, o programa de aprendizagem nos dá um suporte e um norte, no início da nossa carreira profissional, levando em conta, que a maioria dos jovens estão em sua primeira experiência. Durante as aulas, percebo que o professor sempre aborda assuntos que podem surgir na área de trabalho, sendo assim nos preparando para tais situações, caso um dia aconteça! O programa de aprendizagem nos desafia e nos impulsiona a testar nossos conhecimentos, e principalmente agregar aos nossos conhecimentos, as aulas são super dinâmicas, e conta sempre com a nossa participação, para que possamos colocar em prática aquilo que temos aprendido.</p>
+	                        	<p>Acredito ser um programa de suma importância para jovens, pois pode proporcionar o treinamento profissional na teoria, e na empresa, colocamos em prática!</p>
+	                        	<p>Posso concluir, que o programa de aprendizagem auxilia o nosso desenvolvimento na área profissional (empresa).</p>" >                
+	                            <div class="depoimento-body">
+	                                <div class="depoimento-header">
+	                                    <h3 class="depoimento-nome">Yasmin Carvalho de Melo</h3>
+	                                    <h4 class="depoimento-cargo"> Jovem Aprendiz grupo Ser Educacional</h4>
+	                                </div>
+	                                <div class="depoimento-content">
+	                                	Bom, o programa de aprendizagem nos dá um suporte e um norte, no início da nossa carreira profissional, levando em&hellip;
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>    <!-- DEPOIMENTO CARD --> 
+	            </div>
+            
+	            <div class="depoimento">
+	                <div class="depoimento-card">
+	                	<div class="depoimento-outter">
+	                        <a href="#depoimentoeModal" data-toggle="modal" data-target="#depoimentoeModal" data-title="Êmily Izidorio Castelo" data-cargo="Jovem Aprendiz grupo Ser Educacional" data-content="<p>Graças ao programa Jovem Aprendiz, tenho enfrentado desafios pessoais, como o de me comunicar de forma mais eficiente e natural, e aprendido conceitos pouco ou nunca conhecidos por mim anteriormente. O programa de aprendizagem não me faz sentir como apenas uma aluna, mas sim como uma extensão da empresa, me preparando e me fazendo sentir o dever de representá-la da melhor forma possível.</p>" >                
+	                            <div class="depoimento-body">
+	                                <div class="depoimento-header">
+	                                    <h3 class="depoimento-nome">Êmily Izidorio Castelo</h3>
+	                                    <h4 class="depoimento-cargo">Jovem Aprendiz grupo Ser Educacional</h4>
+	                                </div>
+	                                <div class="depoimento-content">
+	                                	Graças ao programa Jovem Aprendiz, tenho enfrentado desafios pessoais, como o de me comunicar de forma mais eficiente e natural,&hellip;
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>    <!-- DEPOIMENTO CARD --> 
+	            </div>
+            
+	            <div class="depoimento">
+	                <div class="depoimento-card">
+	                	<div class="depoimento-outter">
+	                        <a href="#depoimentoeModal" data-toggle="modal" data-target="#depoimentoeModal" data-title="João Pedro Ramalho Rodrigues" data-cargo="Jovem Aprendiz grupo Ser Educacional" data-content="<p>O programa ajuda aos estudantes como se comportar no ambiente e se encaixar dentro do âmbito profissional. Traz o conhecimento prévio de algumas atividades práticas. Estou amando, aulas dinâmicas, salas climatizadas e profissionais de qualidade.</p>" >                
+	                            <div class="depoimento-body">
+	                                <div class="depoimento-header">
+	                                    <h3 class="depoimento-nome">João Pedro Ramalho Rodrigues</h3>
+	                                    <h4 class="depoimento-cargo">Jovem Aprendiz grupo Ser Educacional</h4>
+	                                </div>
+	                                <div class="depoimento-content">
+	                                	O programa ajuda aos estudantes como se comportar no ambiente e se encaixar dentro do âmbito profissional.
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>    <!-- DEPOIMENTO CARD --> 
+	            </div>
+
+	        </div>
+	    </div>
+	</section>
+
+
+
+	<section class="fotos" id="fotos" style="background-image: url(./assets/image/bg-fotos2.png)">
+	    <div class="container">
+	        <div class="d-md-flex align-items-md-center">
+	            <div class="texto-fotos">
+	                <h2 class="sec-title">JOVENS ATUANDO</h2>
+	                 <a href="mailto:jovemaprendiz@sereducacional.com"  class="link-arrow button button-2 d-none d-md-inline-block ">
+	                    QUERO ME INSCREVER                     <span class="arrow"></span>
+	                </a>
+	            </div>
+	            <div class="gallery">
+	                
+	                <ul class="fotos-body">
+	                
+	                
+	                    <li class="foto">
+	                        <div class="foto-item">
+	                            
+	                            <img width="225" height="400" src="./assets/fotos/foto-01.jpg" class="attachment-gallery-size size-gallery-size" alt="Foto 01" loading="lazy" />                        </div>
+	                    </li>
+	            
+	                 
+	                    <li class="foto">
+	                        <div class="foto-item">
+	                            
+	                            <img width="225" height="400" src="./assets/fotos/foto-04.jpg" class="attachment-gallery-size size-gallery-size" alt="Foto 04" loading="lazy" />                        </div>
+	                    </li>
+	            
+	                 
+	                    <li class="foto">
+	                        <div class="foto-item">
+	                            
+	                            <img width="400" height="184" src="./assets/fotos/foto-05.jpg" class="attachment-gallery-size size-gallery-size" alt="Foto 05" loading="lazy" />                        </div>
+	                    </li>
+	            
+	                 
+	                    <li class="foto">
+	                        <div class="foto-item">
+	                            
+	                            <img width="184" height="400" src="./assets/fotos/foto-06.jpg" class="attachment-gallery-size size-gallery-size" alt="Foto 06" loading="lazy" />                        </div>
+	                    </li>
+	            
+	                 
+	                    <li class="foto">
+	                        <div class="foto-item">
+	                            
+	                            <img width="225" height="400" src="./assets/fotos/foto-07.jpg" class="attachment-gallery-size size-gallery-size" alt="Foto 07" loading="lazy" />                        </div>
+	                    </li>
+	            
+	                 
+	                    <li class="foto">
+	                        <div class="foto-item">
+	                            
+	                            <img width="300" height="400" src="./assets/fotos/foto-08.jpg" class="attachment-gallery-size size-gallery-size" alt="Foto 08" loading="lazy" />                        </div>
+	                    </li>
+	            
+	                 
+	                    <li class="foto">
+	                        <div class="foto-item">
+	                            
+	                            <img width="300" height="400" src="./assets/fotos/foto-09.jpg" class="attachment-gallery-size size-gallery-size" alt="Foto 09" loading="lazy" />                        </div>
+	                    </li>
+	            
+	                 
+	                    <li class="foto">
+	                        <div class="foto-item">
+	                            
+	                            <img width="225" height="400" src="./assets/fotos/foto-02.jpg" class="attachment-gallery-size size-gallery-size" alt="Foto 02" loading="lazy" />                        </div>
+	                    </li>
+	            
+	                 
+	                    <li class="foto">
+	                        <div class="foto-item">
+	                            
+	                            <img width="225" height="400" src="./assets/fotos/foto-03.jpg" class="attachment-gallery-size size-gallery-size" alt="Foto 03" loading="lazy" />                        </div>
+	                    </li>
+	            
+	                             
+	                </ul>
+	            
+	                  
+	             
+	               
+	            </div>
+	        </div>
+	        <div class="d-block d-md-none">
+	            <a href="mailto:jovemaprendiz@sereducacional.com"  class="link-arrow button button-2 ">
+	                QUERO ME INSCREVER                 <span class="arrow"></span>
+	            </a>
+	        </div>
+	    </div>
+
+	</section>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="depoimentoeModal" tabindex="-1" aria-labelledby="depoimentoModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-depoimento">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <div class="header-content">
+	            <h3 class="modal-title" id="depoimentoModalLabel">title</h3>
+	            <h4 class="modal-cargo" >cargo</h4>
+	        </div>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+	<footer id="footer" class="footer">
+	  <div class="container">
+	    <div class="row align-items-center">
+	      <div class="col-md-4 logo-aprendiz">
+	        <img src="./assets/image/logo-uninorte-white.svg" alt="logo" class="img-fluid">
+	      </div>
+
+	      <div class="col-md-4 logo-unina">
+	        <img src="./assets/image/logo-white.svg" alt="logo" class="img-fluid">
+	      </div>
+
+
+	      <div  class="redes col-md-4">
+          <a href="https://www.instagram.com/unamaoficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+	    </div>
+
+	  </div>
+	</footer>
+
+	<script type='text/javascript' id='js-js-extra'>
+	/* <![CDATA[ */
+	var object_name = {"templateUrl":"../aluno-uninassau/"};
+	/* ]]> */
+	</script>
+	<script>
+	  function openMenu(){
+	      var menu = document.getElementsByClassName('menu-mobile')[0];
+	      var nav = document.getElementsByClassName('menu-mobile-nav')[0];
+
+	      if (menu.className === "menu-mobile") {
+	        menu.className += " open";
+	        nav.style.display = "block";
+	      } else {
+	        menu.className = "menu-mobile";
+	        nav.style.display = "none";
+	      }
+	    }
+	</script>
+
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+	<script src="./assets/js/slick.min.js"></script>	
+	<script src="./assets/js/home.js"></script>	 
+	<!-- <script type='text/javascript' src='../aluno-uninassau/dist/js/scripts.js' id='js-js'></script> -->
+</body>
+</html>

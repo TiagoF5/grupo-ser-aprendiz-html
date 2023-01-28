@@ -1,0 +1,27 @@
+@use "sass:math";
+
+@import "bootstrap/bootstrap";
+
+/* BASE */
+@import "base/variaveis";
+@import "base/mixins";
+@import "base/sprite";
+@import "base/extend";
+
+/* COMPONENTS */
+@import "components/tipografia";
+@import "components/base"; 
+@import "components/header";
+@import "components/footer";
+
+/* PAGINAS */
+@import "pages/404";
+@import "pages/home";
+@import "pages/banner";
+@import "pages/quemsomos";
+@import "pages/gruposer";
+@import "pages/como-tornar";
+//@import "pages/vantagens";
+@import "pages/detalhes-sobre";
+@import "pages/incentivos.scss";
+@import "pages/depoimentos";

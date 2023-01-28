@@ -1,0 +1,76 @@
+.vantagens{
+    padding: 100px 0;
+    .textos-vantagens{
+        h2{
+            font-size: 2.8rem;
+            line-height: 1;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+    }
+
+     .box-vantagens{
+        font-family: var(--ff-bold);
+        height: 100%;
+        background-color: #003764;
+        text-align: center;
+        padding: 20px;
+
+       color: white;
+
+       .icone {
+            width: 60px;
+            height: auto;
+            margin-bottom: 20px;
+       }
+
+    }
+    .vantagem {
+
+        &:nth-child(2) {
+            .box-vantagens{
+                border-top-right-radius:20px;
+            }
+        }
+        &:nth-child(3) {
+            .box-vantagens{
+                border-bottom-left-radius:20px;
+            }
+        }
+    }
+    
+     @media(max-width: 767px){
+        
+        .textos-vantagens{
+            h2{
+                font-size: 2rem;
+            }
+        }
+
+        .vantagem {
+            &:first-child{
+                .box-vantagens{
+                    border-radius:20px 20px 0 0;
+                }
+            }
+
+            &:last-child{
+                .box-vantagens{
+                    border-radius: 0 0 20px 20px;
+                }
+            }
+            &:nth-child(2) {
+                .box-vantagens{
+                    border-top-right-radius:0px;
+                }
+            }
+            &:nth-child(3) {
+                .box-vantagens{
+                    border-bottom-left-radius:0px;
+                }
+            }
+        }
+       
+
+    }
+}

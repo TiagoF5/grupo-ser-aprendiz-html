@@ -1,0 +1,128 @@
+.como-tornar{
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    background-position-y: -60px;
+    position: relative;
+}
+    .forma-menor-img1 , .forma-menor-img2{
+        position: absolute;
+    }
+
+    @media(max-width:998px){   
+        .forma-menor-img1 , .forma-menor-img2{
+            display: none;
+        }
+    }
+
+    .forma-menor-img1{
+        transform: rotate(172deg);
+        left: -130px;
+        top: 100px;
+    }
+
+    .forma-menor-img2{
+        bottom: 120px;
+        right: -75px;
+    }
+
+
+.body-como-tornar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+
+    h2{
+        font-size: 2.2rem;
+        font-family: 'gobold_bold';
+        max-width: 425px;
+        color: #003764;
+    }
+
+    .ajuste-cards{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .cartoes{
+            width: 20%;
+            height: 350px;
+            padding: 20px;
+            background-color: #ebebeb;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .button-como-tornar{
+        margin-top: 110px;
+        margin-bottom: 50px;
+        a{
+            display: flex;
+            justify-content: space-between;
+            background-color: #facf00;
+            padding: 20px 30px 20px 15px;
+            font-size: 1.3em;
+            font-family: 'gobold_bold';
+            border-radius: 20px;
+            color: #003764;
+            font-weight: bolder;
+            width: 35%;
+            margin: auto;
+
+            .arrow{
+                margin-left: 20px;
+            }
+        }
+    }
+
+    @media(max-width:998px){
+        padding-top: 25px;
+
+        h2{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .ajuste-cards{
+            flex-direction: column;
+            align-items: center;
+
+            .cartoes{
+                width: 90%;
+                height: 250px;
+                padding: 20px;
+                background-color: #ebebeb;
+                border-radius: 20px;
+                margin-bottom: 35px;
+
+                img{
+                    width: 30%;
+                }
+                p{
+                    font-size: 1rem;
+                }
+    
+            }
+        }
+
+        .button-como-tornar{
+            margin: 50px 0;
+            a{
+                font-size: 1em;
+                width: 90%;
+
+                img{
+                    object-fit: contain;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.vantagens{
+    margin-top: 50px;
+
+    .body-vantagens{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 120px 0;
+        .textos-vantagens{
+            h2{
+                max-width: 460px;
+                font-size: 3rem;
+                margin-bottom: 30px;
+                color: #003764;
+                font-weight: bolder;
+                font-family: 'gobold_bold';
+            }
+
+            a{
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 30px 15px 10px;
+                font-size: 1em;
+                background-color: #003764;
+                color: white;
+                font-weight: bolder;
+                border-radius: 20px;
+                width: 65%;
+                font-family: 'gobold_bold';
+
+                .arrow-w{
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .ajuste-box{
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+            .boxes-vantagens{
+                display: flex;
+                flex-direction: row;
+                .box-vantagens{
+                    background-color: #003764;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    margin: 5px;
+                    padding: 10px 35px;
+
+                    p{
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 998px){
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+            
+            .textos-vantagens{
+                margin: 50px 0;
+
+                h2{
+                    font-size: 2.5rem;
+                    text-align: center;
+                }
+    
+                a{
+                    width: 100%;
+                }
+            }
+
+            .ajuste-box{
+                padding: 50px;
+
+                .boxes-vantagens{
+                    flex-direction: column;
+
+                    .box-vantagens{
+                        border-radius: unset !important;
+                        padding: 35px;
+
+                        img{
+                            width: 25%;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

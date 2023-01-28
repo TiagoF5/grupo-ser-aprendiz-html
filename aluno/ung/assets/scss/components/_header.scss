@@ -1,0 +1,141 @@
+
+.menu-lps-container {
+    margin-left: auto;
+    li {
+        width: 150px;
+        line-height: 1;
+    }
+    li a {
+        text-transform: uppercase;
+        color: var(--menu-lp-color);
+        display: inline-block;
+        padding: 0.8rem 0.8rem;
+
+    }
+    li.item-aluno a {
+        background-color: var(--menu-lp-aluno-bg-color);   
+        color: var(--menu-lp-aluno-color); 
+    }
+    li.item-empresa a {
+        background-color: var(--menu-lp-empresa-bg-color);   
+        color: var(--menu-lp-empresa-color);   ;
+    }
+}
+.header {
+    font-family: 'neue_helveticablack';
+    background-color: var(--header-bg);
+    
+    .logo img {
+        height: 40px;
+    }
+    a{
+        font-size: 1.2rem;
+        //font-family: 'gobold_bold';
+        
+    }
+
+    .menu-ajuste{
+        display: flex;          
+        align-items: center; 
+    }
+
+    .menu-jovem-aprendiz{
+        background-color: var(--menu-bg);
+        display: flex;
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+            
+            li{
+                list-style-type: none;
+                position: relative;
+                &::after{
+                    content: "+";
+                    display: block;
+                    position: absolute;
+                    right: -10px;
+                    top: 50%;
+                    transform:translateY(-50%);
+                    color: var(--menu-link-color);
+                }
+                &:last-child::after {
+                    display: none;
+                }
+                a{        
+                    display: inline-block;        
+                    padding: 20px;
+                    color: var(--menu-link-color);
+                    font-size: 16px;
+                    text-align: center;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+            }
+            
+        }
+    }
+    .menu-mobile-nav, .menu-mobile{
+        display: none;
+    }
+    .menu-lp-mob {
+        display: none;
+    }
+    @media (max-width: 992px) {
+        .menu-lp-mob {
+            display: block;
+            background-color: var(--menu-lp-mob-bg);
+            .menu-lps-container { 
+                width: 100%;            
+                display: flex;
+                .nav {
+                    margin-left: auto;                    
+                }
+                li {
+                    width: auto;
+                }
+                a {
+                    font-size: .65rem;
+                }
+            }
+        }
+        .menu-ajuste{
+            padding: 10px 0;
+            .menu-lps-container { 
+                display: none;
+            }
+           
+           
+            .right-menu{
+                margin-left: auto;
+            }
+             .menu-mobile{
+                display: block;
+                i{
+                    color: white;
+                }
+            }
+        }
+
+        .menu-mobile-nav{
+            background-color: var(--menu-bg);
+            ul{
+                li{
+                    list-style-type: none;
+                    padding: 5px 0;
+                    a{
+                        color: var(--menu-link-color);
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .menu-jovem-aprendiz{
+            display: none;
+        }
+    }
+}

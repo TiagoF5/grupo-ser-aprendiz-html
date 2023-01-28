@@ -1,0 +1,114 @@
+.detalhes-sobre {
+  background-color: #ebebeb;
+  height: 300px;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+
+  .detalhes-bloco{
+    overflow: hidden;
+    height: 370px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    .pd1 {
+      width: 320px;
+      margin-left: auto;
+    }
+    .pd2 {
+      width: 304px;
+      margin-right: auto;
+    }
+  }
+  
+  .body-detalhes {
+    display: flex;
+    flex-direction: row;
+    //justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    
+
+    p {
+      color: #003764;
+      font-weight: bolder;
+      font-size: 1.2em;
+      padding:0 40px;
+      width: 25%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex: 1 1 25%;
+      &::after {
+          display: block;
+          content: "";
+          position: absolute;
+          height: 60%;
+          width: 16px;
+          background-color: #003764;
+          top: 20%;
+          right: -8px;
+          border-radius:8px;
+        }
+
+        &:last-of-type{
+          &::after {
+            display: none;
+          }
+        }
+    }
+  }
+
+  @media (max-width: 998px){
+    padding: 40px 25px;
+    height: auto;
+
+    .detalhes-bloco{
+      display: none;
+    }
+
+    .body-detalhes{
+      display: block;
+      width: 100vw;
+
+      p{
+        font-size: 1.4em;
+        width: 100%;
+        text-align: center;
+        max-width: initial;
+        position: relative;
+        padding: 0 0 2rem;
+        margin-bottom: 2rem;
+        
+        display: block;
+
+        &::after {
+          display: block;
+          content: "";
+          position: absolute;
+          width: 60%;
+          height: 8px;
+          background-color: #003764;
+          left: 20%;
+          bottom: -4px;
+          top: initial;
+          right: initial;
+          border-radius:4px;
+
+        }
+
+        &:last-of-type{
+          margin-bottom: 0;
+          &::after {
+            display: none;
+          }
+        }
+
+      }
+      img.bar-desk{
+        display: none;
+      }
+    }
+  }
+}
