@@ -1,0 +1,228 @@
+.featured-posts {
+    background: url(../image/banner-noticia.jpg) no-repeat right top;
+    background-size: cover;
+}
+.featured-post-abstract {
+    max-width: 450px;
+    padding: 80px 0;
+
+    .logo {
+        max-width: 300px;
+    }
+    .post-title {
+        line-height: 1;
+        color: #fff;
+        font-size: 2.4em;
+        margin: 20px 0 40px;
+
+    }
+}
+.posts-wrapper {
+    position: relative;
+    padding-top: 60px;
+    background: url(../image/posts-roll-bg.png) no-repeat 130% -50%, 
+                url(../image/posts-roll-bg.png) no-repeat -50% 130%;
+
+    .arrow {
+        position: absolute;
+        height: 180px;
+        display: flex;
+        justify-self: flex-end;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+    .arrow-left  {
+        left: 0;
+        top: 20px;
+    }
+    .arrow-right  {
+        right: 0;
+        top: 200px;
+        img {
+            transform: rotate(180deg);
+        }
+    }
+}
+.news-about {
+    color: #707070;
+    font-size:1rem;
+    text-align: center;
+
+    .title {
+        font-size: 1.4rem;
+        color: #707070;
+    }
+
+}
+
+
+.latests-posts {
+    padding: 60px 0;
+}
+.post-card {
+    color: #707070;
+    border-width: 0;
+    margin-bottom: 40px;
+    .post-title,
+    .post-title a{
+        line-height: 1;
+        font-size: 1.2rem;
+        color: #000;
+    }
+}
+
+.post-featured-image-wrapper {
+    a {
+        display: block;
+        position: relative;
+        padding-top: 66%;
+        > img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+}
+
+
+@media (max-width: 727px) {
+    .featured-posts {
+        background: url(../image/banner-noticia-mob.jpg) no-repeat right bottom ;
+        background-size: 100% auto;
+    }
+    .featured-post-abstract {
+        max-width: 450px;
+        padding: 80px 0 120px;
+
+        .logo {
+            max-width: 220px;
+        }
+        .post-title {
+            line-height: 1;
+            color: #fff;
+            font-size: 1.8em;
+            margin: 20px 0 40px;
+        }
+    }
+    .posts-wrapper {
+
+        .arrow {
+            height: 70px;         
+        }
+    }
+}
+
+/*NOTICIA*/
+.single-post {
+}
+.single-header {
+     .single-title  {
+        font-size: 1.6em;
+        line-height: 1;
+        color: #707070;
+        margin: 30px 0 40px;
+    }
+    .single-cover {
+        
+        overflow: hidden;
+        position: relative;
+        padding-top: 25%;
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }    
+    }
+}
+
+//CONTEUDO DE TEXTO GERAL DE POST
+.single-content {
+    color: #707070;
+    font-size: 1rem;
+    position: relative;    
+    background: url(../image/posts-roll-bg.png) no-repeat 130% -50%, 
+                url(../image/posts-roll-bg.png) no-repeat -50% 130%;
+
+    .arrow {
+        position: absolute;
+        height: 180px;
+        display: flex;
+        justify-self: flex-end;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+    .arrow-left  {
+        left: 0;
+        top: 20%;
+    }
+    .arrow-right  {
+        right: 0;
+        top: 60%;
+        img {
+            transform: rotate(180deg);
+        }
+    }
+
+    //contenudo de texto
+    h1,h2,h3,h4,h5,h6 {
+        color: #707070;
+        font-weight: 600;
+        font-family: "Open Sans", sans-serif;;
+    } 
+    h1,h2,h3    {  font-size: 1.4rem;   }
+    h4          {  font-size: 1.2rem;   }
+    h5          {   font-size: 1rem;    }
+    h6          {   font-size: .8rem;    }
+
+    //IMAGEM DENTRO DO CONTEÚDO DE POST
+    .post-content-image {
+        padding: 40px;
+        > img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.read-more {
+    margin-top: 80px;
+    .sec-title {
+        color: #707070;
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+    header {
+        border-bottom: 10px solid #0C3A63;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 727px) {
+  
+    .single-content{
+
+        .arrow {
+            height: 30px;         
+        }
+    }
+}
