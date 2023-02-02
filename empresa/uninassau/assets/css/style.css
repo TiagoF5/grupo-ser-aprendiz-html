@@ -10354,7 +10354,9 @@ textarea {
 }
 :root {
   --color-1:#f6e200;
-  --color-2:#002258;
+  --color-1-dark: #ddcb00;
+  --color-2: #002258;
+  --color-2-dark: #000e25;
   --color-3:#003764;
   --title-color: var(--color-3);
   --button-color: var(--color-2);
@@ -10448,6 +10450,19 @@ a:hover {
 
 .italic {
   font-style: italic;
+}
+
+/*---------------------
+    ANIMAÇÕES
+------------------------*/
+[data-animation]:not(.highlight) {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .menu-lps-container {
@@ -10780,7 +10795,7 @@ a:hover {
 .sobre {
   padding: 100px 0;
   background-repeat: no-repeat;
-  background-position-x: -90px;
+  background-position-x: -100px;
 }
 .sobre .sobre-ajust .sobre-texto h2 {
   font-size: 2.2rem;
