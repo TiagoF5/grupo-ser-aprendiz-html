@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#ECECEC;}
-	.st1{fill:#273a25;}
-</style>
-<rect id="bg" x="1.2" y="-0.3" class="st0" width="150" height="150"/>
-<path id="cote" class="st1" d="M65.1,79.5v34.4H33.6V87c0-14.6,1.8-25.2,5.3-31.8c4.6-8.7,11.9-15.3,21.9-19.8L68,46.9
-	c-6.1,2.5-10.5,6.2-13.4,11.1s-4.5,12.1-4.8,21.5H65.1z M115.8,79.5v34.4H84.3V87c0-14.6,1.8-25.2,5.3-31.8
-	c4.6-8.7,11.9-15.3,21.9-19.8l7.2,11.5c-6.1,2.5-10.5,6.2-13.4,11.1s-4.5,12.1-4.8,21.5H115.8z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" style="enable-background:new 0 0 150 150" xml:space="preserve"><path style="fill:#ececec" d="M1.2-.3h150v150H1.2z"/><path d="M65.1 79.5v34.4H33.6V87c0-14.6 1.8-25.2 5.3-31.8 4.6-8.7 11.9-15.3 21.9-19.8L68 46.9c-6.1 2.5-10.5 6.2-13.4 11.1s-4.5 12.1-4.8 21.5h15.3zm50.7 0v34.4H84.3V87c0-14.6 1.8-25.2 5.3-31.8 4.6-8.7 11.9-15.3 21.9-19.8l7.2 11.5c-6.1 2.5-10.5 6.2-13.4 11.1s-4.5 12.1-4.8 21.5h15.3z" style="fill:#273a25"/></svg>
