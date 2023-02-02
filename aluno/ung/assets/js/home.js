@@ -1,6 +1,6 @@
 (function($) {
   "use strict"; // Start of use strict
-  console.log("running");
+  //console.log("running");
    var templateUrl = object_name.templateUrl;
 
 

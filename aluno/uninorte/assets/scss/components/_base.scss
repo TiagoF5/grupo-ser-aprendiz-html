@@ -6,8 +6,11 @@ $color-3: #fff;
 
 :root {
   --color-1:#{$color-1};
+  --color-1-dark: #{$color-1-dark};
   --color-2: #{$color-2};
+  --color-2-dark: #{$color-2-dark};
   --color-3:#{$color-3};
+
 
   --text-color:  var(--color-2);
 
@@ -210,6 +213,10 @@ a.link-arrow-yellow {
       background-color: var(--button-color);
     }
   }
+  &:hover {
+    background-color: var(--button-bg-hover-color);
+    
+  }
 }
 
 a.button-2 {
@@ -232,3 +239,20 @@ a.button-2 {
 .italic {
   font-style: italic;
 }
+
+/*---------------------
+    ANIMAÇÕES
+------------------------*/
+[data-animation]:not(.highlight) {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+
+
+

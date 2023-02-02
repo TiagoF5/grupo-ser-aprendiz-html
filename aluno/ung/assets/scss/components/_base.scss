@@ -1,7 +1,15 @@
+$color-1: #00328d;
+$color-1-dark: darken($color-1, 5%); 
+$color-2: #a8bae0; 
+$color-2-dark: darken($color-2, 10%); 
+$color-3: #003764;
+
 :root {
-  --color-1:#00328d;
-  --color-2:#a8bae0;
-  --color-3:#003764; 
+  --color-1:#{$color-1};
+  --color-1-dark: #{$color-1-dark};
+  --color-2: #{$color-2};
+  --color-2-dark: #{$color-2-dark};
+  --color-3:#{$color-3};
 
   --text-color:  #003764;
 
@@ -17,7 +25,11 @@
   --button-color: #fff;
   --button-hover-color: #fff;
   --button-bg-color: var(--color-1);
-  --button-bg-hover-color: var(--color-1);
+  --button-bg-hover-color: var(--color-1-dark);
+
+  --button-2-color: #fff;
+  --button-2-bg: var(--color-1);
+  --button-2-hover-bg: var(--color-1-dark);
 
   //FOOTER
    //----------------
@@ -200,8 +212,45 @@ a.link-arrow-yellow {
       background-color: var(--button-color);
     }
   }
+
+  &:hover {
+    background-color: var(--button-bg-hover-color);
+  }
+}
+
+a.button-2 {
+    color: var(--button-2-color);
+    background-color: var(--button-2-bg);
+    &:hover{
+      background-color: var(--button-2-hover-bg);
+    }
+
+    .arrow {
+      color: var(--button-2-color);
+      background-color:var(--button-2-color);
+      &::before,
+      &::after {
+        background-color: var(--button-2-color);
+      }
+    }
 }
 
 .italic {
   font-style: italic;
 }
+
+
+/*---------------------
+    ANIMAÇÕES
+------------------------*/
+[data-animation]:not(.highlight) {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+

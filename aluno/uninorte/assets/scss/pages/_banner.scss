@@ -1,3 +1,37 @@
+@keyframes bannerArrowLeft {
+  0%,100% {
+    transform: translateX(0);
+  }
+
+  30% {
+    transform: translateX(-5px);
+  }
+
+}
+@keyframes bannerArrowRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  30% {
+    transform: translateX(5px);
+  }
+}
+
+.personagem1,
+.personagem2 {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;  
+  animation-timing-function: linear;
+}
+.personagem1 {
+   animation-name: bannerArrowLeft;
+}
+
+.personagem2 {
+  animation-name: bannerArrowRight;
+}
+
 
 .banner {
   position: relative;  

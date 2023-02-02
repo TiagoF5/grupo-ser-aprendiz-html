@@ -46,7 +46,6 @@
         ul{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             align-items: center;
             margin-bottom: 0;
             
@@ -57,7 +56,7 @@
                     content: "+";
                     display: block;
                     position: absolute;
-                    right: -10px;
+                    right: -4px;
                     top: 50%;
                     transform:translateY(-50%);
                     color: var(--menu-link-color);
@@ -69,7 +68,7 @@
                     display: inline-block;        
                     padding: 20px;
                     color: var(--menu-link-color);
-                    font-size: 16px;
+                    font-size: .8rem;
                     text-align: center;
                     &:hover{
                         opacity: 0.5;

@@ -1,5 +1,6 @@
 .fotos{
     padding: 60px 0;
+    position: relative;
     .texto-fotos{
         h2{
             line-height: 1;
@@ -59,3 +60,105 @@
     }
 
 }
+
+
+
+/*
+    EFEITO HALFTONE PATTERNS
+*/
+//--------
+
+.fotos {
+  overflow: hidden;
+  > .container {
+    position: relative;
+    z-index: 10;
+  }
+
+  .halftone-wrapper {
+    position: absolute;
+    z-index: 0;
+    height: 120%;
+    width: 120%;
+    top: 0;
+    left: 0;
+    opacity: .2;
+        top: -20%;
+    left: -70%;
+    opacity: 0.1;
+    transform: rotate(18deg);
+  }
+
+  .halftone  {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@property --i0 {
+  syntax: '<number>';
+  initial-value: 0;
+  inherits: true
+}
+
+@property --j0 {
+  syntax: '<number>';
+  initial-value: 0;
+  inherits: true
+}
+
+@property --k0 {
+  syntax: '<number>';
+  initial-value: 0;
+  inherits: true
+}
+
+
+.halftone-wrapper {
+  --i0: .95;
+  --j0: 0;
+  --k0: 0;
+  animation: 
+    i0 3.2591s  infinite, 
+    j0 6.6087s  infinite, 
+    k0 4s  infinite;
+
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out
+}
+
+.halftone {
+  --dotSize: 0.25rem;
+
+  --stop1: 0.06rem;
+  --stop2: 0.85rem;
+
+  position: relative;
+  //adding contrast
+  background: white;
+  filter: contrast(16);
+}
+
+.halftone::after {
+  /* Cover our element */
+  content: '';
+  position: absolute;
+  inset: 0;
+
+
+  /* Dotted background FADE STOP*/
+  background-image: radial-gradient(
+    circle at center,
+    black var(--stop1),
+    transparent var(--stop2)
+  );
+
+  background-size: 1.5rem 1.4rem;
+  background-position: 0 0, 0.65rem 0.65rem;
+  mask-image: radial-gradient(circle at calc(var(--j0)*100%) calc(var(--k0)*100%), rgb(0 0 0), #{rgba(black, .3)} calc(var(--i0)*100%));
+  
+}
+
+@keyframes i0 { to { --i0: 1 } }
+@keyframes j0 { to { --j0: .3 } }
+@keyframes k0 { to { --k0: 1 } }
